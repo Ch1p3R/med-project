@@ -23,31 +23,39 @@
     block-size: 100px;
 }
 
+
 .navbar-brand img {
     max-height: 100%;
     opacity: 1;
-    &:hover{
-    opacity:0.8;
-    }
+}
+
+#site_logo:hover, #site_logo:hover + #description-text{
+	opacity:0.8;
 }
 
 
-
-.navbar-text.description-text{
-	margin-bottom:0;
+#description-text{
+	margin-top:20px;
+	margin-bottom:0px;
 	font-family: 'Pattaya', sans-serif;
 	font-size:40px
 }
 
-.sub-description-text{
+#sub-description-text{
+	margin-top:0;
 	font-size:25px;
 }
 
-.description-text a{
+#description-text a {
 	color:#0077e4;
 	text-decoration: none;
 }
 
-.description-text a:hover {
-    color:#33a0fe;
+
+
+#description-text:hover{
+	opacity:0.8;
 }
+
+
+

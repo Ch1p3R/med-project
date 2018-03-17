@@ -26,11 +26,11 @@
 				<nav class="navbar navbar-default navbar-static-top">
 					<div class="container-fluid">
 						<div class="navbar-header">
-							<a class="navbar-brand" href="#">
-								<img alt="Brand" src="/images/final_logo.png" width="auto">
+							<a class="navbar-brand" href="#" id="site_logo">
+								<img alt="Brand" src="/images/final_logo.png"  width="auto">
 							</a>
-							<p class="navbar-text description-text"><a href="#">Смолінська лікарська амбулаторія<a></p>
-							<p class="navbar-text sub-description-text" >Маловисківський центр первинної медико-санітарної допомоги</p>
+							<p class="navbar-text" id="description-text"><a href="#">Смолінська лікарська амбулаторія<a></p>
+							<p class="navbar-text" id="sub-description-text">Маловисківський центр первинної медико-санітарної допомоги</p>
 							
 						</a>
 						</div>
@@ -117,5 +117,20 @@
 		--}}
 		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
 		{{{isAdminEditorJS user}}}
+
+		<script>
+			$("#description-text").hover(increaseOpacity, decreaseOpacity);
+			$("#site_logo").hover(increaseOpacity, decreaseOpacity);
+
+			function increaseOpacity() {
+				$("#site_logo").css("opacity", "0.8");
+				$("#description-text").css("opacity", "0.8");
+			}
+			function decreaseOpacity() {
+				$("#site_logo").css("opacity", "1");
+				$("#description-text").css("opacity", "1");
+			}
+
+		</script>
 	</body>
 	</html>
