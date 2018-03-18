@@ -1,3 +1,6 @@
+@smartphones: ~"only screen and (max-width: 768px)";
+@tablets: ~"only screen and (min-width: 768px) and (max-width: 959px)";
+
 #header {
 	margin-top: 0px;
 }
@@ -26,7 +29,7 @@
 
 .navbar-brand {
     margin: 10px;
-    padding: 0 0 0 14%;
+    padding: 0 0 0 17px;
     block-size: 100px;
     display: table-cell;
 }
@@ -58,6 +61,7 @@ p#description-text{
 	text-decoration: none;
 	font-family: 'Pattaya', sans-serif;
 	font-size:5vmin;
+	line-height:1;
 }
 
 
@@ -76,3 +80,37 @@ p#description-text{
 }
 
 
+@media @smartphones{
+	.navbar.main{
+	padding-left:0;
+	}
+	#header{
+	vertical-align: middle;
+	}
+	.navbar-header{
+	display:block;
+		position:relative;
+	}
+	.navbar-brand{
+	display:block;
+	position:relative;
+	width:100%;
+    padding-left:0;
+	}
+
+	.navbar-brand img{
+	    margin-left: auto;
+    margin-right: auto;
+
+	}
+
+	#description-text{
+	display:block;
+	position:relative;
+	text-align:center;
+	}
+
+	#description-text a{
+	font-size:40px;
+	}
+}
