@@ -1,21 +1,68 @@
 {{!< default}}
 <div class="container">
-	<div class="jumbotron"><img src="/images/logo.svg" width="160">
-		<h1>Welcome</h1>
-		<p>This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.</p>
-		<p>
-			It includes the latest versions of
-			<a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
-			and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
-		</p>
-		<p>Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how to customise it.</p>
-		<hr>
-		<p>We have created a default Admin user for you with the email <strong>7on@ukr.net</strong> and the password <strong>admin</strong>.</p>
-		<p><a href="/keystone/signin" style="margin-right: 10px" class="btn btn-lg btn-primary">Sign in</a> to use the Admin UI.</p>
-		<hr>
-		<p>
-			Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a> and
-			<a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
-		</p>
-	</div>
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+
+			<div id="imageCarousel" class="carousel slide" data-interval="12000" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#imageCarousel" data-slide-to="1"></li>
+					<li data-target="#imageCarousel" data-slide-to="2"></li>
+					<li data-target="#imageCarousel" data-slide-to="3"></li>
+					<li data-target="#imageCarousel" data-slide-to="4"></li>
+					<li data-target="#imageCarousel" data-slide-to="5"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="/images/carousel1.jpg" class="img-responsive"/>
+						<div class="carousel-caption first-capt">
+							<p>Вас вітає колектив Смолінської лікарської амбулаторії!</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="/images/carousel2.jpg" class="img-responsive"/>
+						<div class="carousel-caption">
+							<p>У Статусі Всесвітньої організації охорони здоров"я (ВООЗ) сказано, що здоров'я - це стан повного фізичного, духовного і соціального благополуччя, а не лише відсутність хвороб і фізичних недоліків.</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="/images/carousel3.jpg" class="img-responsive"/>
+						<div class="carousel-caption">
+							<p>Флюорограма органів грудної кліітки дозволяє виявити патології, які тільки починаються, коли симптоми ще не помітні і захворювання не можливо відчути, але саме в цей час можливо знайти найбільш ефективне лікування. Зверніться до реєстратури за направленням для проведення флюорограми органів грудної клітки.</p>
+						</div>
+					</div>	
+					<div class="item">
+						<img src="/images/carousel4.jpg" class="img-responsive"/>
+						<div class="carousel-caption">
+							<p>Виявити захворювання на ранній стадії і відповідно лікувати його бистріше і ефективніше допоможе своєчасний щорічний профілактичний онкоогляд. Не залишайтесь з проблемою наодинці - зверніться до свого лікаря чи терапевта.</p>
+						</div>
+					</div>
+
+
+					<div class="item">
+						<img src="/images/carousel5.jpg" class="img-responsive"/>
+						<div class="carousel-caption">
+							<p>Щеплення - єдина можливість знизити ризик серйозних інфекційних захворювань у малюків та дорослих. Запитуйте інформацію про щеплення у свого педіатра чи сімейного лікаря.</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="/images/carousel6.jpg" class="img-responsive"/>
+						<div class="carousel-caption">
+							<p>Шановні мешканці селища Смоліне, села Березівки та всі українці в цілому, колектив Смолінської лікарської амбулаторії бажає Вам лише міцного та бездоганного здоров'я!</p>
+						</div>
+					</div>
+				</div>
+
+				<a href="#imageCarousel" class="carousel-control left" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+
+				<a href="#imageCarousel" class="carousel-control right" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+			</div>
+
+
+		</div>
+	</div>	
 </div>
