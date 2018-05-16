@@ -1,2 +1,2 @@
-# med-project
-Initialized default KeystoneJS project
+# Med-project
+Simple site with using Keystone CMS.
